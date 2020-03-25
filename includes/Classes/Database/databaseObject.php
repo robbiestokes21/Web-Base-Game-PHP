@@ -8,8 +8,8 @@ class DatabaseObject
     {
         $this->conn = mysqli_connect($host, $user, $password, $name, $port);
         if (!$this->conn) {
-            throw new Ex
-            }
+
+        }
     }
 
 }

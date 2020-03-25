@@ -1,10 +1,7 @@
 <?php
-require ('./includes/Classes/Database/databaseConfigs.php');
-require ('./includes/Classes/Database/databaseObject.php');
+include('includes/classes/Database/databaseConfigs.php');
+include('includes/classes/Database/databaseObject.php');
 $dbconfigs = new DBConfig();
-$dbConfig = [];
-/** @var TYPE_NAME $dbConfig */
-$dbConfig = $dbconfigs->getDBConfigs();
-$db = new DatabaseObject($dbConfig['host'], $dbConfig['user'], $dbConfig['password'], $dbConfig['dbname'], $dbConfig['port']);
-
+$dbconfig = $dbconfigs->getDBConfigs();
+$db = new DatabaseObject($dbconfig['host'], $dbconfig['user'], $dbconfig['password'], $dbconfig['dbname'], $dbconfig['port']);
 ?>
