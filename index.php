@@ -1,4 +1,5 @@
 <?php
+error_reporting(1);
 include('includes/classes/Database/databaseConfigs.php');
 include('includes/classes/Database/databaseObject.php');
 $dbconfigs = new DBConfig();
